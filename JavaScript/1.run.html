@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript</h1>
+    1+1,
+    <script>
+      document.write(1 + 1);
+      document.write(Math.random());
+
+      // 현재 날짜와 시간을 표시하는 코드
+      var now = new Date();
+      var year = now.getFullYear(); // 년도
+      var month = now.getMonth() + 1; // 월 (0부터 시작하므로 1을 더함)
+      var day = now.getDate(); // 일
+      var hour = now.getHours(); // 시간
+      var minute = now.getMinutes(); // 분
+      var second = now.getSeconds(); // 초
+
+      // 현재 시간을 'YYYY-MM-DD HH:MM:SS' 형식으로 표시
+      document.write(
+        "<p>" +
+          year +
+          "-" +
+          month +
+          "-" +
+          day +
+          " " +
+          hour +
+          ":" +
+          minute +
+          ":" +
+          second +
+          "</p>"
+      );
+    </script>
+    here
+  </body>
+</html>
