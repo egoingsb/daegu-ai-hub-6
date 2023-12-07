@@ -3,14 +3,23 @@
   <head> </head>
   <body>
     <h1>WEB</h1>
+
     <input
       type="button"
       value="dark"
       onclick="
-      document.querySelector('body').style.backgroundColor = 'black';
-      document.querySelector('body').style.color = 'white';
+        if(this.value === 'dark') {
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+          this.value = 'white';
+        } else { 
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+          this.value = 'dark';
+        }
     "
     />
+
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
       architecto nulla, dignissimos exercitationem totam, delectus, tenetur
