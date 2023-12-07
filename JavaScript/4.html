@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
+  <head>
+    <script>
+      function dark() {
+        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.color = "white";
+      }
+      function white() {
+        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.color = "black";
+      }
+    </script>
+  </head>
   <body>
     <h1>WEB</h1>
-
     <input
       type="button"
       value="dark"
       onclick="
         if(this.value === 'dark') {
-          document.querySelector('body').style.backgroundColor = 'black';
-          document.querySelector('body').style.color = 'white';
+          dark();
           this.value = 'white';
         } else { 
-          document.querySelector('body').style.backgroundColor = 'white';
-          document.querySelector('body').style.color = 'black';
+          white();
           this.value = 'dark';
         }
     "
